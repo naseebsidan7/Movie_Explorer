@@ -1,0 +1,65 @@
+.nav_container{
+
+    display: flex;
+    padding: 2rem;
+    align-items: center ;
+    gap: .3rem;
+    background-color: #010409;
+   
+    border-bottom: 1px solid rgba(255, 255, 255, 0.384);
+    
+    
+}
+
+.app_heading{
+    background-color: rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+    color: rgba(198, 215, 240, 0.89);
+    font-size: 25px;
+}
+
+ 
+
+.search_icon {
+    font-size: 33px;
+   
+    margin-left: -1px;
+    margin-bottom: -3px;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+@media screen and (max-width:410px) {
+    .app_heading {
+         font-size: 25px;
+    }
+ 
+}
+
+@media screen and (max-width:370px) {
+    .app_heading {
+         font-size: 22px;
+    }
+     .search_icon {
+         font-size: 24px;
+        
+     }
+}
+
+@media screen and (max-width:350px) {
+    .app_heading {
+         font-size: 20px;
+    }
+    svg{
+        font-size: 20px;
+       
+     }
+     .search_icon {
+         font-size: 12px;
+        
+     }
+}
