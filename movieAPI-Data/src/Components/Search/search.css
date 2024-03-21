@@ -6,6 +6,8 @@
    flex-direction: column;
    justify-content: flex-start;
    min-height: 80vh;
+   align-items: center;
+   
  }
 
 .movie_list_container{
@@ -16,9 +18,8 @@
     background-color: #1c1b1b;
     margin-top: 10px;
     margin-bottom: 4rem;
-    
-   
-
+    position: absolute;
+    top: 42%;
 }
 
  
@@ -76,7 +77,7 @@
       border-top-left-radius: 10px; */
       border-radius: 5px;
       padding: 1.2rem;
-
+      margin-bottom: 5rem;
 }
 
  
@@ -84,7 +85,7 @@
 @media screen and (max-width:430px) {
   .movie-title h3{
     font-size: .9rem;
-    line-height: 22px;
+    line-height: 25px;
     margin-bottom: 10px; 
     font-weight: 500;
   }
@@ -93,6 +94,14 @@
     font-size: .8rem;
   }
 
+  .input_feild input{
+    font-size: 17px;
+  }
+
+  .movie_list_container{
+    max-height: 360px;
+
+  }
  
  
 }

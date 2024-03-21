@@ -7,20 +7,21 @@ import './search.css'
 const SearchMovie = () => {
  
     const [ resData, setResData ] = useState([])
-
     const [ searchData, setSearchData ] = useState("")
+    const [ id, setId ] = useState(null)
 
+  //setting input changing data to searchData() useState
     const HandleSearch=(event)=>{
          setSearchData(event.target.value)
     }
 
+    // fetching data with api request according to search input
     useEffect(()=>{
           async function ApiRequesting(){
               try {
                 const response = await axios.request(`http://www.omdbapi.com/?s=${searchData}&page=1&apikey=bc4364d3`)
-                  console.log(response.data.Search)
                   setResData(response.data.Search)
-  
+                  
               } catch (error) {
                  console.log("fetching faild "+ error)
               }
@@ -33,16 +34,17 @@ const SearchMovie = () => {
           }
 
     },[searchData])
-
-
-
-    useEffect(()=>{
-       console.log(resData)
-    },[searchData])
  
-  
+
+    // setting clicked list id to useState
+  const HandleSetId=( imdbId )=>{
+      setId(imdbId)
+      setResData([])
+  }
+ 
+
      return (
-        <div >
+        
            <div className='wrapper' >
                 
                 <div className='input_feild' >
@@ -52,7 +54,7 @@ const SearchMovie = () => {
                       <div className='movie_list_container'>
                         {
                           resData &&  resData.map((movie)=>(
-                              <div className='movie_list' key={movie.imdbID}>
+                              <div className='movie_list' key={movie.imdbID} onClick={()=> HandleSetId(movie.imdbID)}>
                                     
                                     <img src={movie.Poster} alt="poster" />
                                   
@@ -66,12 +68,12 @@ const SearchMovie = () => {
                        
 
                       
-                       <Content/>
+                      { id &&  <Content imdbId={id}  />}
                        
 
                  
               </div>
-        </div>
+      
      )
 }
 
