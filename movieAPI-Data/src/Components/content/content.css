@@ -21,8 +21,8 @@
 
 
 .h2_heading{
-    font-size: 2.5rem;
-    color:#5991e6e6;
+    font-size: 2.4rem;
+    color:#417cba;
     font-weight: 500;
     line-height: 95px;
 }
@@ -47,6 +47,7 @@
 .yr_rating_Rela_group .text_p {
     color: #b7cef1;
     font-size: 1rem;
+    text-transform: capitalize;
 }
 
 .text_p{
@@ -95,7 +96,6 @@ strong.last_3strong {
 .poster_img img{
       border: 1px solid  rgba(128, 128, 128, 0.326);
       
-      
 }
 
 
@@ -106,7 +106,7 @@ strong.last_3strong {
     }
 
     .h2_heading{
-        
+        font-size: 2rem;
         line-height: 65px;
     }
     
@@ -121,8 +121,16 @@ strong.last_3strong {
       }
 
           .h2_heading{
-          font-size: 2rem;
+          font-size: 1.7rem;
     }
+    .yr_rating_Rela_group strong{
+        margin-bottom: .2rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white;
+} 
+
+ 
 
  }
 
@@ -131,24 +139,46 @@ strong.last_3strong {
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
+        
+    }
+
+    .yr_rating_Rela_group strong {
+        font-size: 19px;
+  }
+
+    .yr_rating_Rela_group .text_p {
+        color: #b7cef1;
+        font-size: 17px;
+       
     }
     
  }
 
 
 @media screen and (max-width:430px) {
-    .yr_rating_Rela_group .text_p:first-child{
-           display: none;
-    }
+  
     .yr_rating_Rela_group  {
         justify-content: center;
         margin-top: 10px;
         font-size: 16px;
+        gap: .8rem;
+        
+       border: 1px solid rgba(158, 187, 225, 0.281);
+       background-color: rgba(15, 14, 25, 0.174);
+       border-radius: 20px;
+       padding: 1rem;
+     
     }
 
     .yr_rating_Rela_group strong {
-          font-size: 18px;
+          font-size: 17px;
     }
+
+    .yr_rating_Rela_group .text_p {
+        color: #b7cef1;
+        font-size: 15px;
+    }
+    
 
 
     .custom_lines{
@@ -164,7 +194,7 @@ strong.last_3strong {
     }
 
     .h2_heading{
-          font-size: 1.6rem;
+          font-size: 1.5rem;
           line-height: 50px;
     }
  
@@ -183,7 +213,6 @@ strong.last_3strong {
 
      .poster_img img{
         width: 100%;
-        
      }
 
      strong.last_3strong {

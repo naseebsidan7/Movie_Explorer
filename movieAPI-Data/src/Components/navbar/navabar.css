@@ -1,21 +1,55 @@
 .nav_container{
 
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
+
     align-items: center ;
-    gap: .3rem;
+  
     background-color: #010409;
    
-    border-bottom: 1px solid rgba(255, 255, 255, 0.384);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.283);
     
-    
+    justify-content: space-between;
 }
 
-.app_heading{
-    background-color: rgba(0, 0, 0, 0.356);
+.app_logo{
+    
     cursor: pointer;
-    color: rgba(198, 215, 240, 0.89);
-    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.app_logo2{
+        
+    cursor: pointer;
+    width: 80px;
+    height: 70px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.app_logo2 img{
+    width: 100%;
+}
+
+.app_logo img{
+    width: 100%;
+    filter: brightness(1);
+
+}
+ .movies_heading{
+    border: 1px solid rgba(75, 113, 194, 0.975);
+    color: rgb(172, 173, 188);
+    padding: 0 .7rem;
+    border-radius: 40px;
+
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+   
+     
 }
 
  
@@ -33,33 +67,41 @@
 
 
 
-@media screen and (max-width:410px) {
-    .app_heading {
-         font-size: 24px;
+@media screen and (max-width:450px) {
+    
+    .app_logo2 img , .app_logo img{
+        width: 65%;
     }
+
+    .nav_container{
+
+        padding:.4rem;
+
+    }
+
+    
+.app_logo{
+    
+    cursor: pointer;
+    width: 115px;
+    height: 70px;
+    margin: 0;
+}
+
+.app_logo2{
  
+    width: 85px;
+    height: 50px;
+    margin-right: -20px;
+}
+    
+    
 }
 
 @media screen and (max-width:370px) {
-    .app_heading {
-         font-size: 22px;
-    }
-     .search_icon {
-         font-size: 24px;
-        
-     }
+    
 }
 
 @media screen and (max-width:350px) {
-    .app_heading {
-         font-size: 20px;
-    }
-    svg{
-        font-size: 20px;
-       
-     }
-     .search_icon {
-         font-size: 12px;
-        
-     }
+     
 }

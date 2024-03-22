@@ -36,8 +36,8 @@ const Content = ({imdbId}) => {
  
   return (
    <div className='content_container'>
-   <div className='poster_img' style={{width:resDetails.Poster?'auto':'300px'}} >
-       <img src={img} alt="poster" onError={()=>  setImg(fallbackImg)}/>
+   <div className='poster_img' >
+       <img src={img} alt="poster" onError={()=>  setImg(fallbackImg)} style={{width:img===fallbackImg?'300px':''}}/>
    </div>
    <div className='movie_details'>
        <h2 className='h2_heading'>{resDetails.Title || 'Title not available'}</h2>
