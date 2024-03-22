@@ -19,7 +19,7 @@ const SearchMovie = () => {
     useEffect(()=>{
           async function ApiRequesting(){
               try {
-                const response = await axios.request(`http://www.omdbapi.com/?s=${searchData}&page=1&apikey=bc4364d3`)
+                const response = await axios.request(`https://www.omdbapi.com/?s=${searchData}&page=1&apikey=bc4364d3`)
                   setResData(response.data.Search)
                   
               } catch (error) {

@@ -14,7 +14,7 @@ const Content = ({imdbId}) => {
             try {
                  
                if(imdbId){
-                     const response = await axios.request(`http://www.omdbapi.com/?i=${imdbId}&apikey=bc4364d3`)
+                     const response = await axios.request(`https://www.omdbapi.com/?i=${imdbId}&apikey=bc4364d3`)
                      setResDetails(prevState => ({ ...prevState, ...response.data }));
                      setImg(response.data.Poster || fallbackImg)
                  }else{
