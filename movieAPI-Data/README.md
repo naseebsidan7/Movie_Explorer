@@ -1,8 +1,23 @@
-# React + Vite
+#  Movie Explorer
+﻿# Search-Movies-Details🔍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ __Description__ 📝 :
+ 
+Movie Explorer is a contemporary web app crafted with React.js (Vite) enabling effortless explore movie details through a sleek UI. Utilizing Movie API, users can easily retrieve movie details by inputting the title. Welcome to a simplified movie exploration experience!  <br>
+ <br>
 
-Currently, two official plugins are available:
+ __Key Features__ 🔑:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Effortless Movie Details Retrieval: Instantly access comprehensive movie information by entering the title.
+-Elegant User Interface: Enjoy a visually pleasing and user-friendly design that enhances the browsing experience.
+-Advanced Search Functionality: Utilize powerful search capabilities to find specific movies quickly and efficiently.
+-Responsive Design: Experience seamless browsing on any device.
+ <br>
+  
+__Live WebSite 🌐__ :  [SearchMovies](https://searchmovies7.netlify.app/)
+ <br>
+  
+
+__API Link ➡️__ :  [Movie API](http://www.omdbapi.com/)
+
+Check it Out !!
