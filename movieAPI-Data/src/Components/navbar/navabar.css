@@ -15,8 +15,8 @@
 .app_logo{
     
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -24,8 +24,8 @@
 .app_logo2{
         
     cursor: pointer;
-    width: 80px;
-    height: 70px;
+    width: 70px;
+    height: 60px;
     margin-left: 1rem;
     margin-right: 1rem;
 }
