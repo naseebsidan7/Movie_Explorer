@@ -7,8 +7,10 @@
    justify-content: flex-start;
    min-height: 80vh;
    align-items: center;
-   
    position: relative;
+
+   
+
  }
 
 .movie_list_container{
@@ -23,8 +25,8 @@
     
     position: absolute;
     top: 15%;
-  
-  
+    
+
 }
 
  

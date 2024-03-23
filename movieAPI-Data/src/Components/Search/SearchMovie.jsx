@@ -44,14 +44,20 @@ const SearchMovie = () => {
  
 
      return (
-        
-           <div className='wrapper' >
+            
+      <div className='app_bg'> 
+           <div className='wrapper ' >
                 
                 <div className='input_feild' >
-                    <input type="text" value={searchData} onChange={ HandleSearch } placeholder='Search Movie..' />
+                    <input type="text"  value={searchData} onChange={ HandleSearch } placeholder='Search Movie..' />
                 </div>
                 
-                      <div className='movie_list_container'>
+                      <div className='movie_list_container' 
+                      style={{
+                        top: id!==null ? "15%"  : "30%"
+                             
+                      }}>
+                      
                         {
                           resData &&  resData.map((movie)=>(
                               <div className='movie_list' key={movie.imdbID} onClick={()=> HandleSetId(movie.imdbID)}>
@@ -73,7 +79,7 @@ const SearchMovie = () => {
 
                  
               </div>
-      
+              </div>
      )
 }
 

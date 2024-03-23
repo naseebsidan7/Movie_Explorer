@@ -16,3 +16,15 @@
 
      
  }
+
+
+ .app_bg{
+    background: url('./assets/img/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+    filter: contrast(1.1);
+ }
