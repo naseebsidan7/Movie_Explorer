@@ -1,0 +1,8 @@
+.movie_card{
+      border:1px solid #3d3d3d7f ;
+     border-radius:18px;
+     background: #80808094;
+     background: linear-gradient(90deg, rgba(0, 0, 0, 0.559) 0%, rgba(36, 13, 13, 0.61) 34%, rgba(27, 27, 27, 0.605) 63%, rgba(0, 0, 0, 0.532) 100%); 
+     backdrop-filter: blur(30px); /* Blur effect */
+     -webkit-backdrop-filter: blur(30px);
+}

@@ -10,6 +10,7 @@ const Footer = () => {
            &#169; <span className='brand_name'> S i d a n</span>
            </a>
            </div>
+           
            <div className='footer-links_icons'>
                            <a href="https://www.linkedin.com/in/naseeb-sidan-16b371267/" target='_blank'><FaLinkedin  /></a>
                            <a href="https://github.com/naseebsidan7?tab=repositories"  target='_blank'> <FaGithub/></a>

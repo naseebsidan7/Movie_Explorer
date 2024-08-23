@@ -6,25 +6,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: "Poppins",sans-serif;
+    
+  scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
+  scroll-padding: 2rem;
+
  }
+
+  
 
  body{
-    background-color: black;
+   background-color: black;
     color: white;
-    font-family: "Poppins",sans-serif;
-
-     
+   
  }
 
+ 
 
- .app_bg{
-    background: url('./assets/img/bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    
-    filter: contrast(1.1);
- }
+ 
+ 

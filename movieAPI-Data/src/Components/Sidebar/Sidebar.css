@@ -1,0 +1,56 @@
+   
+  ::-webkit-scrollbar {
+    width: 0; /* Remove vertical scrollbar */
+    height: 0; /* Remove horizontal scrollbar */
+}
+
+.category-btn:hover {
+    background-color: #282222ad !important;
+    color: white !important;
+  }
+  
+  .category-btn:hover span{
+    color: white !important;
+  }
+
+
+ 
+
+.category-btn{
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: cen;
+    cursor:pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+  
+    padding: 15px 14px;
+    margin: 10px 0px;
+    border-radius: 55px;
+    transition: all 0.3s ease;
+
+  }
+  
+  @media screen and (max-width: 900px) {
+    .category-btn{
+      margin: 10px;
+    }
+  }
+
+  /* .side_bar::-webkit-scrollbar {
+  display: none;
+
+  }
+ 
+   .side_bar{
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      
+   } */
+
+ 
+ 
+ 
